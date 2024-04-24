@@ -5,6 +5,11 @@
   font-weight: 400;
   font-style: normal;
 }
+.jacquard-12-charted-regular {
+  font-family: "Jacquard 12 Charted", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 *{
   margin: 0;
