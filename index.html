@@ -1,104 +1,124 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 <head>
     <meta charset="utf-8">  
     <title>Memory Card Game | Doodlyyousuf</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jersey+25&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jersey+25&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/images/img-2.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Jersey 25', sans-serif;
-        }
-
-        .wrapper {
-            text-align: center;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-
-        .cards {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card {
-            width: 100px;
-            height: 150px;
-            margin: 10px;
-            position: relative;
-            perspective: 1000px;
-            cursor: pointer;
-        }
-
-        .view {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transition: transform 0.6s;
-        }
-
-        .front-view {
-            transform: rotateY(0deg);
-        }
-
-        .back-view {
-            transform: rotateY(180deg);
-        }
-
-        .card.flip .front-view {
-            transform: rotateY(-180deg);
-        }
-
-        .card.flip .back-view {
-            transform: rotateY(0deg);
-        }
-
-        .details {
-            margin-top: 20px;
-        }
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .popup-content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .popup-content p {
-            font-size: 20px;
-            margin: 0 0 20px;
-        }
-
-        .popup-content button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+  </head>
+  <body>
 </head>
 <body>
     <div class="wrapper">
+    <h1 class="jersey-25-regular">Doodlyyousf || Game</h1>
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-6.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-6.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-4.png" alt="card-img">
+          </div>
+        </li>
         <h1 class="jersey-25-regular">Doodlyyousf || Game</h1>
         <ul class="cards">
+            <!-- Repeat these card elements as needed -->
             <li class="card">
                 <div class="view front-view">
                     <img src="images/que_icon.svg" alt="icon">
@@ -107,218 +127,31 @@
                     <img src="images/img-1.png" alt="card-img">
                 </div>
             </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-2.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-3.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-4.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-5.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-6.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-5.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-6.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-1.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-2.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-3.png" alt="card-img">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="images/que_icon.svg" alt="icon">
-                </div>
-                <div class="view back-view">
-                    <img src="images/img-4.png" alt="card-img">
-                </div>
-            </li>
+            <!-- Add all other cards similarly -->
         </ul>
         <div class="details">
+          <p class="time">Time: <span><b>50</b>s</span></p>
+          <p class="flips">Flips: <span><b>0</b></span></p>
+          <button>Refresh</button>
             <p class="time">Time: <span><b>50</b>s</span></p>
             <p class="flips">Flips: <span><b>0</b></span></p>
             <button>Refresh</button>
         </div>
+      </ul>
     </div>
+<div class="popup">
+    <div class="popup-content">
+        <p>Congratulations! 🎉</p>
+        <button class="close-popup">Close</button>
     <div class="popup">
         <div class="popup-content">
             <p>Congratulations! 🎉</p>
             <button class="close-popup">Close</button>
         </div>
     </div>
-    <script>
-        const cards = document.querySelectorAll(".card"),
-        timeTag = document.querySelector(".time b"),
-        flipsTag = document.querySelector(".flips b"),
-        refreshBtn = document.querySelector(".details button"),
-        popup = document.querySelector(".popup"),
-        closePopupBtn = document.querySelector(".close-popup");
+</div>
+    <script src="script.js"></script>
 
-        let maxTime = 50;
-        let timeLeft = maxTime;
-        let flips = 0;
-        let matchedCard = 0;
-        let disableDeck = false;
-        let isPlaying = false;
-        let cardOne, cardTwo, timer;
-
-        function initTimer() {
-            if (timeLeft <= 0) {
-                return clearInterval(timer);
-            }
-            timeLeft--;
-            timeTag.innerText = timeLeft;
-        }
-
-        function flipCard({ target: clickedCard }) {
-            if (!isPlaying) {
-                isPlaying = true;
-                timer = setInterval(initTimer, 1000);
-            }
-            if (clickedCard !== cardOne && !disableDeck && timeLeft > 0) {
-                flips++;
-                flipsTag.innerText = flips;
-                clickedCard.classList.add("flip");
-                if (!cardOne) {
-                    return cardOne = clickedCard;
-                }
-                cardTwo = clickedCard;
-                disableDeck = true;
-                let cardOneImg = cardOne.querySelector(".back-view img").src,
-                    cardTwoImg = cardTwo.querySelector(".back-view img").src;
-                matchCards(cardOneImg, cardTwoImg);
-            }
-        }
-
-        function matchCards(img1, img2) {
-            if (img1 === img2) {
-                matchedCard++;
-                if (matchedCard == 6 && timeLeft > 0) {
-                    clearInterval(timer);
-                    showPopup();
-                    return;
-                }
-                cardOne.removeEventListener("click", flipCard);
-                cardTwo.removeEventListener("click", flipCard);
-                cardOne = cardTwo = "";
-                return disableDeck = false;
-            }
-
-            setTimeout(() => {
-                cardOne.classList.add("shake");
-                cardTwo.classList.add("shake");
-            }, 400);
-
-            setTimeout(() => {
-                cardOne.classList.remove("shake", "flip");
-                cardTwo.classList.remove("shake", "flip");
-                cardOne = cardTwo = "";
-                disableDeck = false;
-            }, 1200);
-        }
-
-        ffunction shuffleCard() {
-    timeLeft = maxTime;
-    flips = matchedCard = 0;
-    cardOne = cardTwo = "";
-    clearInterval(timer);
-    timeTag.innerText = timeLeft;
-    flipsTag.innerText = flips;
-    disableDeck = isPlaying = false;
-
-    let arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
-    arr.sort(() => Math.random() > 0.5 ? 1 : -1);
-
-    cards.forEach((card, index) => {
-        card.classList.remove("flip");
-        let imgTag = card.querySelector(".back-view img");
-        setTimeout(() => {
-            imgTag.src = `images/img-${arr[index]}.png`;
-        }, 500);
-        card.addEventListener("click", flipCard);
-    });
-}
-
-
-        function showPopup() {
-            popup.style.display = "flex";
-        }
-
-        function hidePopup() {
-            popup.style.display = "none";
-            shuffleCard();
-        }
-
-        shuffleCard();
-
-        refreshBtn.addEventListener("click", shuffleCard);
-        closePopupBtn.addEventListener("click", hidePopup);
-
-        cards.forEach(card => {
-            card.addEventListener("click", flipCard);
-        });
-    </script>
+  </body>
 </body>
 </html>
