@@ -95,7 +95,7 @@ function showPopup() {
 }
 
 function hidePopup() {
-    popup.style.display = "none";
+    popup.style.display = "hidden";
     shuffleCard();
 }
 
